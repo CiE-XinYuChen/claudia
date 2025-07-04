@@ -808,7 +808,6 @@ pub async fn execute_claude_code(
         .arg("--output-format")
         .arg("stream-json")
         .arg("--verbose")
-        .arg("--dangerously-skip-permissions")
         .current_dir(&project_path)
         .stdout(Stdio::piped())
         .stderr(Stdio::piped());
@@ -841,7 +840,6 @@ pub async fn continue_claude_code(
         .arg("--output-format")
         .arg("stream-json")
         .arg("--verbose")
-        .arg("--dangerously-skip-permissions")
         .current_dir(&project_path)
         .stdout(Stdio::piped())
         .stderr(Stdio::piped());
@@ -877,7 +875,6 @@ pub async fn resume_claude_code(
         .arg("--output-format")
         .arg("stream-json")
         .arg("--verbose")
-        .arg("--dangerously-skip-permissions")
         .current_dir(&project_path)
         .stdout(Stdio::piped())
         .stderr(Stdio::piped());

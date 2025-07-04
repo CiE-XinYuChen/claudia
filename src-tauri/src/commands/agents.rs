@@ -710,7 +710,6 @@ pub async fn execute_agent(
         .arg("--output-format")
         .arg("stream-json")
         .arg("--verbose")
-        .arg("--dangerously-skip-permissions")
         .current_dir(&project_path)
         .stdin(Stdio::null()) // Don't pipe stdin - we have no input to send
         .stdout(Stdio::piped())
